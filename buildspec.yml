@@ -8,7 +8,6 @@ phases:
     commands:
       - echo Build started on `date`
       - cd lambda
-      - echo %cd%
       - python ../zip.py ../Hello_Intent.zip hello_intent.py bibot_config.py bibot_helpers.py bibot_userexits.py
       - python ../zip.py ../Goodbye_Intent.zip goodbye_intent.py bibot_config.py bibot_helpers.py bibot_userexits.py
       - cd ..
