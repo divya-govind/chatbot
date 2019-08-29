@@ -1,15 +1,13 @@
 {
     "name": "dimensions", 
-    "description": "List of dimensions in ticket database",
+    "description": "List of dimensions in default database",
     "valueSelectionStrategy": "TOP_RESOLUTION", 
     "enumerationValues": [
         {
             "synonyms": [
-                "products",
-				"producttype",
-				"productline"
+                "sales"
             ], 
-            "value": "productline"
+            "value": "sales"
         }
     ]
 }
