@@ -18,15 +18,10 @@
         },
         "sampleUtterances": [
 			
-		  "How many matches were played in the {Year}",
-		  "How many matches were played in the {Stadium}",
-		  "How many matches were played in the {RoundID} in the {Year} at {Stadium}  ",
-		  "How many matches were played in the {City} {Country}",
-		  "How many matches were played in the {City} {Country}",
-		  "How many matches were played in the {Datetime}",
-		  "How many teams were qualified in the {Year}"  ,
-		  "How many goals were scored in the world cup {Year}"  ,		
-		  "How many goals were scored by team {Country}"   
+		  "How many matches were played in the {time_year}",
+		  "How many matches were played in the {venue_country}"
+		  "How many matches were played on {time_weekday}"
+
         ],
     "slots": [
 	{
@@ -46,6 +41,79 @@
             "slotTypeVersion": "$LATEST", 
             "sampleUtterances": [], 
             "description": "match_stage"
+        }, 
+		
+		{
+            "slotType": "Amazon.Date", 
+            "name": "time_year", 
+            "slotConstraint": "Optional", 
+            "valueElicitationPrompt": {
+                "maxAttempts": 2, 
+                "messages": [
+                    {
+                        "content": "The time", 
+                        "contentType": "PlainText"
+                    }
+                ]
+            }, 
+            "priority": 1, 
+            "slotTypeVersion": "$LATEST", 
+            "sampleUtterances": [], 
+            "description": "time_year"
+        }, 
+		{
+            "slotType": "Amazon.Country", 
+            "name": "venue_country", 
+            "slotConstraint": "Optional", 
+            "valueElicitationPrompt": {
+                "maxAttempts": 2, 
+                "messages": [
+                    {
+                        "content": "The time", 
+                        "contentType": "PlainText"
+                    }
+                ]
+            }, 
+            "priority": 1, 
+            "slotTypeVersion": "$LATEST", 
+            "sampleUtterances": [], 
+            "description": "venue_country"
+        }, 
+		{
+            "slotType": "Amazon.Date", 
+            "name": "time_month", 
+            "slotConstraint": "Optional", 
+            "valueElicitationPrompt": {
+                "maxAttempts": 2, 
+                "messages": [
+                    {
+                        "content": "The time", 
+                        "contentType": "PlainText"
+                    }
+                ]
+            }, 
+            "priority": 1, 
+            "slotTypeVersion": "$LATEST", 
+            "sampleUtterances": [], 
+            "description": "time_month"
+        }, 
+		{
+            "slotType": "Amazon.DayOfWeek", 
+            "name": "time_weekday", 
+            "slotConstraint": "Optional", 
+            "valueElicitationPrompt": {
+                "maxAttempts": 2, 
+                "messages": [
+                    {
+                        "content": "The time", 
+                        "contentType": "PlainText"
+                    }
+                ]
+            }, 
+            "priority": 1, 
+            "slotTypeVersion": "$LATEST", 
+            "sampleUtterances": [], 
+            "description": "time_weekday"
         }, 
     ]
 }
