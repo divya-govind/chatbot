@@ -80,7 +80,7 @@
             "description": "venue_country"
         }, 
 		{
-            "slotType": "Amazon.DATE", 
+            "slotType": "AMAZON.DATE", 
             "name": "time_month", 
             "slotConstraint": "Optional", 
             "valueElicitationPrompt": {
@@ -98,7 +98,7 @@
             "description": "time_month"
         }, 
 		{
-            "slotType": "Amazon.DayOfWeek", 
+            "slotType": "AMAZON.DayOfWeek", 
             "name": "time_weekday", 
             "slotConstraint": "Optional", 
             "valueElicitationPrompt": {
