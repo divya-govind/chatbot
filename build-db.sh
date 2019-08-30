@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 #
 # Creates the Athena database
 #
