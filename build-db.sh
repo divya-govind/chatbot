@@ -41,44 +41,5 @@ aws athena start-query-execution \
     --result-configuration "OutputLocation=$ATHENA_BUCKET/output/" \
     >/dev/null
 
-# Create TICKIT category table in Athena
-echo "Creating category table..."
-aws athena start-query-execution \
-    --query-string "create external table category (cat_id INT, cat_group STRING, cat_name STRING, cat_desc STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY '|' LOCATION '$ATHENA_BUCKET/category';" \
-    --query-execution-context "Database=$ATHENA_DB" \
-    --result-configuration "OutputLocation=$ATHENA_BUCKET/output/" \
-    >/dev/null
-
-# Create TICKIT date table in Athena
-echo "Creating date_dim table..."
-aws athena start-query-execution \
-    --query-string "create external table date_dim (date_id INT, cal_date DATE, day STRING, week STRING, month STRING, quarter STRING, year INT, holiday BOOLEAN) ROW FORMAT DELIMITED FIELDS TERMINATED BY '|' LOCATION '$ATHENA_BUCKET/date';" \
-    --query-execution-context "Database=$ATHENA_DB" \
-    --result-configuration "OutputLocation=$ATHENA_BUCKET/output/" \
-    >/dev/null
-
-# Create TICKIT event table in Athena
-echo "Creating event table..."
-aws athena start-query-execution \
-    --query-string "create external table event (event_id INT, venue_id INT, cat_id INT, date_id INT, event_name STRING, start_time TIMESTAMP) ROW FORMAT DELIMITED FIELDS TERMINATED BY '|' LOCATION '$ATHENA_BUCKET/event';" \
-    --query-execution-context "Database=$ATHENA_DB" \
-    --result-configuration "OutputLocation=$ATHENA_BUCKET/output/" \
-    >/dev/null
-
-# Create TICKIT listing table in Athena
-echo "Creating listing table..."
-aws athena start-query-execution \
-    --query-string "create external table listing (list_id INT, seller_id INT, event_id INT, date_id INT, qty INT, price DECIMAL(8,2), total DECIMAL(8,2), listing_time TIMESTAMP) ROW FORMAT DELIMITED FIELDS TERMINATED BY '|' LOCATION '$ATHENA_BUCKET/listing';" \
-    --query-execution-context "Database=$ATHENA_DB" \
-    --result-configuration "OutputLocation=$ATHENA_BUCKET/output/" \
-    >/dev/null
-
-# Create TICKIT sales table in Athena
-echo "Creating sales table..."
-aws athena start-query-execution \
-    --query-string "create external table sales (sales_id INT, list_id INT, seller_id INT, buyer_id INT, event_id INT, date_id INT, qty INT, amount DECIMAL(8,2), commission DECIMAL(8,2), sale_time TIMESTAMP) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' LOCATION '$ATHENA_BUCKET/sales';" \
-    --query-execution-context "Database=$ATHENA_DB" \
-    --result-configuration "OutputLocation=$ATHENA_BUCKET/output/" \
-    >/dev/null
 
 

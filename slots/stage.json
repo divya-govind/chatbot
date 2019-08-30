@@ -1,0 +1,38 @@
+{
+    "name": "match_stage", 
+    "description": "List of dimensions in default database",
+    "valueSelectionStrategy": "TOP_RESOLUTION", 
+    "enumerationValues": [
+        {
+            "synonyms": [
+                "stages",
+				"phase"
+            ], 
+
+			[{"value": "Group 1"},
+{"value": "Group 2"},
+{"value": "Group 3"},
+{"value": "Semi-finals"},
+{"value": "Final"},
+{"value": "Preliminary round"},
+{"value": "Quarter-finals"},
+{"value": "Match for third place"},
+{"value": "First round"},
+{"value": "Group 6"},
+{"value": "Group B"},
+{"value": "Group A"},
+{"value": "Group 5"},
+{"value": "Group C"},
+{"value": "Group D"},
+{"value": "Group F"},
+{"value": "Group E"},
+{"value": "Round of 16"},
+{"value": "Group H"},
+{"value": "Group G"},
+{"value": "Third place"}]
+
+			
+        }
+    ]
+}
+

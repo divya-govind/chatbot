@@ -19,7 +19,13 @@ ORIGINAL_VALUE = 0
 TOP_RESOLUTION = 1
 
 SLOT_CONFIG = {
-   'productline': {'type': TOP_RESOLUTION, 'remember': True,  'error': 'I couldn\'t find an event called "{}".'}
+   'productline': {'type': TOP_RESOLUTION, 'remember': True,  'error': 'I couldn\'t find an event called "{}".'},
+   'count':            {'type': ORIGINAL_VALUE, 'remember': True},
+   'date':      {'type': ORIGINAL_VALUE, 'remember': True},
+    'city':       {'type': ORIGINAL_VALUE, 'remember': True},
+    'state':       {'type': ORIGINAL_VALUE, 'remember': True},
+    'status':      {'type': ORIGINAL_VALUE, 'remember': True},
+    'order':      {'type': ORIGINAL_VALUE, 'remember': True}
    }
 
 DIMENSIONS = {
@@ -28,7 +34,7 @@ DIMENSIONS = {
     'date':     {'slot': 'date',  'column': 'orderdate',  'singular': 'sales'},
     'city':     {'slot': 'city',  'column': 'city',  'singular': 'sales'},
     'state':     {'slot': 'state', 'column': 'state', 'singular': 'sales'},
-    'country': {'slot': 'country',    'column': 'country',    'singular': 'sales'}
+    'order': {'slot': 'order',    'column': 'ORDERNUMBER',    'singular': 'sales'}
 }
 
 
