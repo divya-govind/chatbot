@@ -44,7 +44,7 @@
         }, 
 		
 		{
-            "slotType": "Amazon.Date", 
+            "slotType": "AMAZON.DATE", 
             "name": "time_year", 
             "slotConstraint": "Optional", 
             "valueElicitationPrompt": {
@@ -62,7 +62,7 @@
             "description": "time_year"
         }, 
 		{
-            "slotType": "Amazon.Country", 
+            "slotType": "AMAZON.Country", 
             "name": "venue_country", 
             "slotConstraint": "Optional", 
             "valueElicitationPrompt": {
@@ -80,7 +80,7 @@
             "description": "venue_country"
         }, 
 		{
-            "slotType": "Amazon.Date", 
+            "slotType": "Amazon.DATE", 
             "name": "time_month", 
             "slotConstraint": "Optional", 
             "valueElicitationPrompt": {
