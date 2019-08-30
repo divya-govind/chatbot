@@ -3,13 +3,8 @@
     "description": "List of dimensions in default database",
     "valueSelectionStrategy": "TOP_RESOLUTION", 
     "enumerationValues": [
-        {
-            "synonyms": [
-                "stages",
-				"phase"
-            ], 
-
-			[{"value": "Group 1"},
+      
+{"value": "Group 1"},
 {"value": "Group 2"},
 {"value": "Group 3"},
 {"value": "Semi-finals"},
@@ -29,10 +24,10 @@
 {"value": "Round of 16"},
 {"value": "Group H"},
 {"value": "Group G"},
-{"value": "Third place"}]
+{"value": "Third place"}
 
 			
-        }
+        
     ]
 }
 
