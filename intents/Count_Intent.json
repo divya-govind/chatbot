@@ -19,7 +19,7 @@
         "sampleUtterances": [
 			
 		  "How many matches were played in the {time_year}",
-		  "How many matches were played in the {venue_country}"
+		  "How many matches were played in the {venue_country}",
 		  "How many matches were played on {time_weekday}"
 
         ],
