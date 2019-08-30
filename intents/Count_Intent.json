@@ -25,9 +25,6 @@
         ],
     "slots": [
 	{
-   
-		
-		{
             "slotType": "AMAZON.DATE", 
             "name": "time_year", 
             "slotConstraint": "Optional", 
