@@ -23,7 +23,7 @@ import bibot_helpers as helpers
 import bibot_userexits as userexits
 
 # SELECT statement for Count query
-COUNT_SELECT = "SELECT count(MatchID) FROM  matches"
+COUNT_SELECT = "SELECT count(matchid) FROM  matches"
 COUNT_JOIN = " WHERE "
 COUNT_WHERE = " LOWER({}) LIKE LOWER('%{}%') "   
 COUNT_PHRASE = 'count'
