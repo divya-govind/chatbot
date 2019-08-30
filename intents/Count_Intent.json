@@ -25,23 +25,7 @@
         ],
     "slots": [
 	{
-            "slotType": "match_stage", 
-            "name": "match_stage", 
-            "slotConstraint": "Optional", 
-            "valueElicitationPrompt": {
-                "maxAttempts": 2, 
-                "messages": [
-                    {
-                        "content": "The name of the stage", 
-                        "contentType": "PlainText"
-                    }
-                ]
-            }, 
-            "priority": 1, 
-            "slotTypeVersion": "$LATEST", 
-            "sampleUtterances": [], 
-            "description": "match_stage"
-        }, 
+   
 		
 		{
             "slotType": "AMAZON.DATE", 
