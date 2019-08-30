@@ -29,9 +29,6 @@
 		  "How many goals were scored by team {Country}"   
         ],
     "slots": [
-        {
-		
-		}
  
     ]
 }
