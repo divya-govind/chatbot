@@ -114,6 +114,6 @@
             "slotTypeVersion": "$LATEST", 
             "sampleUtterances": [], 
             "description": "time_weekday"
-        }, 
+        }
     ]
 }
