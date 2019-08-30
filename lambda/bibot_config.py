@@ -19,23 +19,18 @@ ORIGINAL_VALUE = 0
 TOP_RESOLUTION = 1
 
 SLOT_CONFIG = {
-   'productline': {'type': TOP_RESOLUTION, 'remember': True,  'error': 'I couldn\'t find an event called "{}".'},
-   'count':            {'type': ORIGINAL_VALUE, 'remember': True},
-   'date':      {'type': ORIGINAL_VALUE, 'remember': True},
-    'city':       {'type': ORIGINAL_VALUE, 'remember': True},
-    'state':       {'type': ORIGINAL_VALUE, 'remember': True},
-    'status':      {'type': ORIGINAL_VALUE, 'remember': True},
-    'order':      {'type': ORIGINAL_VALUE, 'remember': True}
-   }
+    'match_stage':       {'type': TOP_RESOLUTION, 'remember': True,  'error': 'I couldn\'t find an event called "{}".'}
+}
 
 DIMENSIONS = {
-    'productline':     {'slot': 'productline',  'column': 'productline',  'singular': 'sales'},
-    'status':     {'slot': 'status', 'column': 'status',       'singular': 'sales'},
-    'date':     {'slot': 'date',  'column': 'orderdate',  'singular': 'sales'},
-    'city':     {'slot': 'city',  'column': 'city',  'singular': 'sales'},
-    'state':     {'slot': 'state', 'column': 'state', 'singular': 'sales'},
-    'order': {'slot': 'order',    'column': 'ORDERNUMBER',    'singular': 'sales'}
+    'year':     {'slot': 'time_year',  'column': 'matches.year',  'singular': 'matches'},
+    'month':     {'slot': 'time_month', 'column': 'matches.month',       'singular': 'matches'},
+    'weekday':     {'slot': 'time_weekday',  'column': 'matches.weekday',  'singular': 'matches'},
+    'city':     {'slot': 'venue_city',  'column': 'matches.city',  'singular': 'matches'},
+    'country':     {'slot': 'venue_country', 'column': 'matches.country', 'singular': 'matches'},
+    'stage': {'slot': 'match_stage',    'column': 'matches.stage',    'singular': 'matches'}
 }
+
 
 
 class SlotError(Exception):
