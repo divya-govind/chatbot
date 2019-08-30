@@ -19,13 +19,8 @@ ORIGINAL_VALUE = 0
 TOP_RESOLUTION = 1
 
 SLOT_CONFIG = {
-    'productline':       {'type': TOP_RESOLUTION, 'remember': True,  'error': 'I couldn\'t find an event called "{}".'},
-       {'type': TOP_RESOLUTION, 'remember': True,  'error': 'I couldn\'t find a category called "{}".'},
-    'count':            {'type': ORIGINAL_VALUE, 'remember': True},
-    'dimension':        {'type': ORIGINAL_VALUE, 'remember': True},
-    'one_productline':        {'type': TOP_RESOLUTION, 'remember': False, 'error': 'I couldn\'t find an event called "{}".'},
-    'another_productline':    {'type': TOP_RESOLUTION, 'remember': False, 'error': 'I couldn\'t find an event called "{}".'}
-}
+   'productline': {'type': TOP_RESOLUTION, 'remember': True,  'error': 'I couldn\'t find an event called "{}".'}
+   }
 
 DIMENSIONS = {
     'productline':     {'slot': 'productline',  'column': 'productline',  'singular': 'sales'},

@@ -10,7 +10,11 @@
         {
             "intentVersion": "$LATEST", 
             "intentName": "Goodbye_Intent"
-        }
+        },
+		        {
+            "intentVersion": "$LATEST", 
+            "intentName": "Refresh_Intent"
+        }, 
   ], 
   "locale": "en-US",
   "abortStatement": {
